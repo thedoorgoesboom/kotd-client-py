@@ -9,7 +9,7 @@ def processFlair(flair):
     stars = len(re.search(r'★+', flair).group())
     curhp = int(hpextract[0])
     maxhp = int(hpextract[1])
-    maxdmg = round(0.08*curhp**0.15*maxhp**0.5*stars**1.7)
+    maxdmg = round(0.08*maxhp**0.15*curhp**0.5*stars**1.7)
     return stars, curhp, maxhp, maxdmg
 
 def processTitle(title):
